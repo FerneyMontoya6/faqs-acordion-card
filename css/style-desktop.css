@@ -1,0 +1,19 @@
+main {
+    width: 100rem;
+    margin: 12rem 0;
+    padding: 5rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main--image {
+    position: absolute;
+    top: calc(50% - 225px);
+    left: 0;
+    width: 50rem;
+}
+
+.faqs {
+    width: 40%;
+}
