@@ -70,20 +70,26 @@ button {
     background: url('../images/icon-arrow-down.svg');
     background-repeat: no-repeat;
     background-position: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 .button__active {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 
 .faqs--item {
     margin-bottom: 2rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid var(--light-grayish-blue);
 }
 
 .question {
-    height: 3rem;
     display: flex;
     justify-content: space-between;
+}
+.question__active {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
 }
 
 .question--paragraph {
@@ -92,8 +98,10 @@ button {
 
 .answer-hidden--paragraph {
     display: none;
+    margin-bottom: 1rem;
 }
 .toggle {
     display: initial;
+    transition: all .3s ease;
 }
 
