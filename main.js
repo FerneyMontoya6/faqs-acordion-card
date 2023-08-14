@@ -4,21 +4,29 @@
 const faqsDiv = document.querySelector('.faqs');
 const paragraphsHidden = document.querySelectorAll('.answer-hidden--paragraph');
 const questions = document.querySelectorAll('.question--paragraph');
+const buttons = document.querySelectorAll('button');
 const paragraphsHiddenArray = [...paragraphsHidden];
 const questionsArray = [...questions];
+const buttonsArray = [...buttons];
+
 
 faqsDiv.addEventListener('click', (e) => {
-  
-    const btnName = e.target.tagName;
-    const btn = e.target;
 
-    if(btnName === 'BUTTON') {
-        btn.classList.toggle('button__active');
+    const NUMBER_LETTERS_PARAGRAPH_CLASS = 19;
 
-        btnNumber = Number(btn.className[1]);
+    const elementClicked = e.target.className;
+    const classNameSliced = elementClicked.slice(0, NUMBER_LETTERS_PARAGRAPH_CLASS); 
+    
+    if (classNameSliced === 'question--paragraph' || e.target.tagName === 'BUTTON') {
+        const numberOfQuestion = Number(elementClicked.charAt(elementClicked.length - 1));
         
-        paragraphsHiddenArray[btnNumber - 1].classList.toggle('toggle');
-        questionsArray[btnNumber - 1].classList.toggle('question__active');
-    }
+        paragraphsHiddenArray[numberOfQuestion - 1].classList.toggle('toggle');
+        paragraphsHiddenArray[numberOfQuestion - 1].classList.toggle(String(numberOfQuestion));
 
+        questionsArray[numberOfQuestion - 1].classList.toggle('question__active');
+        questionsArray[numberOfQuestion - 1].classList.toggle(String(numberOfQuestion));
+
+        buttonsArray[numberOfQuestion - 1].classList.toggle('button__active');
+        buttonsArray[numberOfQuestion - 1].classList.toggle(String(numberOfQuestion));
+    }
 })

@@ -2,6 +2,8 @@ main {
     width: 100rem;
     margin: 12rem 0;
     padding: 5rem 3rem 2rem 3rem;
+    overflow-x: hidden;
+    overflow-y: visible;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,8 +11,16 @@ main {
 
 .main--image {
     position: absolute;
+    z-index: 100;
     top: calc(50% - 225px);
-    left: 0;
+    left: -8rem;
+    width: 50rem;
+}
+
+.bg--pattern {
+    position: absolute;
+    top: calc(50% - 225px);
+    left: -8rem;
     width: 50rem;
 }
 
