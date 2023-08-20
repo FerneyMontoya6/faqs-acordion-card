@@ -1,27 +1,3 @@
-main {
-    width: 100rem;
-    margin: 12rem 0;
-    padding: 5rem 3rem 2rem 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/*
-.image--container {
-    overflow: hidden;
-}
-
-.main--image {
-    position: absolute;
-    z-index: 100;
-    top: calc(50% - 225px);
-    left: -8rem;
-    width: 50rem;
-}
-*/
-
-
 
 .bg--pattern {
     position: absolute;
@@ -30,34 +6,53 @@ main {
     width: 50rem;
 }
 
-.faqs {
-    width: 40%;
-}
-
 
 /* START HOTFIX  */
 
+
 main {
+    width: 90rem;
+    min-height: 50rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
     padding: initial;
     padding-right: 4rem;
     height: 45rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    text-align: initial;
 }
 
 .image--container {
     display: flex;
     align-items: center;
     overflow-x: hidden;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: -565px -295px;
 }
 
-.image--container img {
+.image--container__woman-desktop {
+    width: 100%;
     transform: translateX(-7.5rem);
 }
 
+.image--container__square {
+    position: absolute;
+    top: 21rem;
+    left: -9rem;
+}
 
 .faqs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 45%;
+    margin-top: 8rem;
+    overflow-y: scroll;
+    padding-right: 1rem;
 }
 
 
