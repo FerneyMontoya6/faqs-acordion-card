@@ -7,6 +7,7 @@ main {
     justify-content: space-between;
 }
 
+/*
 .image--container {
     overflow: hidden;
 }
@@ -18,6 +19,9 @@ main {
     left: -8rem;
     width: 50rem;
 }
+*/
+
+
 
 .bg--pattern {
     position: absolute;
@@ -29,3 +33,32 @@ main {
 .faqs {
     width: 40%;
 }
+
+
+/* START HOTFIX  */
+
+main {
+    padding: initial;
+    padding-right: 4rem;
+    height: 45rem;
+}
+
+.image--container {
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.image--container img {
+    transform: translateX(-7.5rem);
+}
+
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* END HOTFIX  */
