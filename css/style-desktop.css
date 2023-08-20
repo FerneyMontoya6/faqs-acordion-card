@@ -2,11 +2,13 @@ main {
     width: 100rem;
     margin: 12rem 0;
     padding: 5rem 3rem 2rem 3rem;
-    overflow-x: hidden;
-    overflow-y: visible;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.image--container {
+    overflow: hidden;
 }
 
 .main--image {
