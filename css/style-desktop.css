@@ -39,6 +39,7 @@ h1 {
 
 .image--container__woman-desktop {
     width: 100%;
+    display: initial;
     transform: translateX(-7.5rem);
 }
 
@@ -46,6 +47,12 @@ h1 {
     position: absolute;
     top: 21rem;
     left: -9rem;
+    display: initial;
+}
+
+.bg--pattern__mobile,
+.image--container__woman-mobile {
+    display: none;
 }
 
 .faqs {

@@ -40,13 +40,29 @@ main {
     position: relative;
     width: 33rem;
     margin: 12rem 0;
-    padding: 13rem 3rem 2rem 3rem;
+    padding: 13rem 3rem 3rem 3rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     background-color: white;
 }
 
+.image--container__woman-desktop,
+.image--container__square {
+    display: none;
+}
+
+.image--container__woman-mobile {
+    position: absolute;
+    top: -12rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.bg--pattern__mobile {
+    position: absolute;
+    top: 0;
+    width: 80%;
+}
 
 h1 {
     padding-bottom: 2rem;
@@ -81,6 +97,7 @@ button {
 .question {
     display: flex;
     justify-content: space-between;
+    cursor: alias;
 }
 .question__active {
     color: var(--very-dark-desaturated-blue);
